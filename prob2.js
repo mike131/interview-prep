@@ -1,24 +1,12 @@
 /**
  * Problem 2
- * Write an algorithm that will take two dates and tell you if they are more than a month apart, less than a month apart or exactly a month apart.
+ * Write an algorithm that will take two dates and tell 
+ * you if they are more than a month apart, less than a 
+ * month apart or exactly a month apart.
  */
 var print = console.log;
-var daysInMonth = function (month, year) {
-  // var days = {
-  //   'january': 31,
-  //   'february': 28, //29 on leap
-  //   'march': 31,
-  //   'april': 30,
-  //   'may': 31,
-  //   'june': 30,
-  //   'july': 31,
-  //   'august': 31,
-  //   'september': 30,
-  //   'october': 31,
-  //   'november': 30,
-  //   'december': 31
-  // };
 
+var daysInMonth = function (month, year) {
   var days = {
     1: 31,
     2: 28, //29 on leap
@@ -70,13 +58,8 @@ var checkDifference = function (date1, date2) {
   if (Math.abs(fm - sm) > 1) return 1;
   if (fm === sm && fy === sy) return -1;
   if (sd === (fd + daysInMonth(fm, fy)) % daysInMonth(fm, fy)) return 0;
-  return 1000;
+  return false;
 };
-
-// print(isLeapYear(1997));
-// print(isLeapYear(2000));
-// print(isLeapYear(1900));
-// print(isLeapYear(2012));
 
 function main () {
   var first = process.argv[2];
