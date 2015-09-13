@@ -16,7 +16,9 @@ var A = [1, 8, 6, 10, 4, 7, 7, 8];
 var N = 14;
 
 var pairs = {};
+
 getPairsSumN(N,A);
+
 function getPairsSumN (n, arrayOfNums) {
   // No Pairs
   if (arrayOfNums.length < 2) {
