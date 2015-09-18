@@ -14,12 +14,12 @@
 var print = console.log;
 
 var points = [
-  {x: 1, y: 3},
   {x: 3, y: 1},
   {x: 4, y: 3},
   {x: 2, y: 10},
+  {x: -1, y: 12},
   {x: -10, y: 3},
-  {x: -1, y: 12}
+  {x: 1, y: 3}
 ];
 var k = 3; // Third closest to origin
 
